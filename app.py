@@ -29,3 +29,6 @@ def hello_template():
     # Retrieve the 'name' parameter from the query string
     names = request.args.get("names", "Friend")
     return render_template("hello_there.html", name=names, date=datetime.now())
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
