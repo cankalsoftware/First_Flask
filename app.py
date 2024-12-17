@@ -16,7 +16,7 @@ def hello_there(name=None):
 
     # Validate the name parameter
     if name:
-        match_object = re.match("[a-zA-Z]+", name)
+        match_object = re.match("[a-zA-Z]+$", name)   # # Ensure only alphabets are allowed
         clean_name = match_object.group(0) if match_object else "Friend"
     else:
         clean_name = "Friend"
