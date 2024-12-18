@@ -64,6 +64,7 @@ def test_hello_template_with_name(client):
         b"Today's date and time is:" in response.data
     )  # Also check for the date and time part
 
+
 # Test the hello_template route
 # without a query parameter (should default to "Friend")
 
