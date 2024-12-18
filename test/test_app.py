@@ -1,5 +1,5 @@
 import pytest
-from app import app  # Assuming your app is in a file named `app.py`
+from ..app import app  # Assuming your app is in a file named `app.py`
 
 # from datetime import datetime
 
