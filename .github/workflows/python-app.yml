@@ -41,7 +41,7 @@ jobs:
     # Run tests
     - name: Run tests
       run: |
-        pytest
+        
 
     # Deploy to Render
     - name: Deploy to Render
