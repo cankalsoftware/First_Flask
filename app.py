@@ -15,14 +15,12 @@ def hello_there(name=None):
     formatted_now = now.strftime("%A, %d %B, %Y at %X")
     '''
     Different date formats
-    
-        now.strftime("%a, %d %B, %Y at %X")
+       now.strftime("%a, %d %B, %Y at %X")
         'Wed, 31 October, 2018 at 18:13:39'
         now.strftime("%a, %d %b, %Y at %X")
         'Wed, 31 Oct, 2018 at 18:13:39'
         now.strftime("%a, %d %b, %y at %X")
         'Wed, 31 Oct, 18 at 18:13:39'
-
     '''
 
     # Validate the name parameter

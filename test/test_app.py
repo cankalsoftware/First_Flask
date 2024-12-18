@@ -1,9 +1,12 @@
 import pytest
 from app import app  # Assuming your app is in a file named `app.py`
-from datetime import datetime
+# from datetime import datetime
 
-
-#We use pytest.fixture to set up the client. This creates a test client for Flask, which simulates requests to your application.
+'''
+We use pytest.fixture to set up the client. 
+This creates a test client for Flask, 
+which simulates requests to your application.
+'''
 @pytest.fixture
 
 def client():
@@ -23,7 +26,7 @@ def test_hello_there_with_name(client):
     name = "John"
     response = client.get(f"/hello/{name}")
     assert response.status_code == 200
-    assert b"Hello There, John!" in response.data   ### different version as above
+    assert b"Hello There, John!" in response.data   # different version as above
 
 # Test the hello_there route with an invalid name (contains numbers or special characters)
 def test_hello_there_with_invalid_name(client):
